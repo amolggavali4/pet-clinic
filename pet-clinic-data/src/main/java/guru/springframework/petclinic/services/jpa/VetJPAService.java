@@ -43,6 +43,5 @@ public class VetJPAService implements VetService {
     @Override
     public void deleteById(Long aLong) {
         vetRepository.deleteById(aLong);
-
     }
 }
