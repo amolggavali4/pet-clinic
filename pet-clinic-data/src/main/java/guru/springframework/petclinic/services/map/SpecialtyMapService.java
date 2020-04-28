@@ -2,10 +2,12 @@ package guru.springframework.petclinic.services.map;
 
 import guru.springframework.petclinic.model.Speciality;
 import guru.springframework.petclinic.services.SpecialtyService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 @Service
+@Profile({"default","map"})
 public class SpecialtyMapService extends AbstractMapService<Speciality, Long> implements SpecialtyService {
     @Override
     public Speciality findById(Long id) {
