@@ -3,13 +3,12 @@ package guru.springframework.petclinic.services.map;
 import guru.springframework.petclinic.model.Visit;
 import guru.springframework.petclinic.repositories.VisitRepository;
 import guru.springframework.petclinic.services.VisitService;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
-
+@Service
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
-    //private final VisitRepository visitRepository;
-
     @Override
     public Visit findById(Long aLong) {
         return super.findById(aLong);
